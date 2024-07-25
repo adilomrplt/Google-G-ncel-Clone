@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <link rel="icon" href="https://www.google.com/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: black;
+            background-color: rgb(41, 41, 41);
+        }
+
+        .nav1 li {
+            list-style: none;
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        .nav2 li {
+            list-style: none;
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        .nav1 li a,
+        .nav2 li a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .nav1 li a:hover,
+        .nav2 li a:hover {
+            text-decoration: underline;
+
+        }
+
+        .nav1 {
+            float: left;
+            padding: 10px 0;
+        }
+
+        .nav2 {
+            float: right;
+            margin-right: 20px;
+            padding: 10px 0;
+        }
+
+        .nav2 li a img {
+            width: 20px;
+            height: 20px;
+        }
+
+        .nav2 li a:hover img {
+            transform: scale(1.1);
+            background-color: #8b8b8b;
+            border-radius: 50%;
+        }
+
+        .nav2 img:hover {
+            transform: scale(1.1);
+        }
+
+
+        .nav2-button {
+            background-color: #616161;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border: none;
+            border-radius: 10px;
+        }
+
+        header a {
+            text-decoration: none;
+            color: white;
+        }
+
+        header {
+            padding: 10px;
+            text-align: right;
+        }
+
+        .logo img {
+            display: block;
+            margin: 0 auto;
+            margin-top: 200px;
+            height: auto;
+        }
+
+        .box-1 {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        .box-1 form {
+            margin-top: 20px;
+            text-align: center;
+            position: relative;
+            width: 100%;
+        }
+
+        .box-1 input[type="text"] {
+            padding: 10px 40px 10px 40px;
+            width: 50%;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+        }
+
+        .icon {
+            position: absolute;
+            top: 22%;
+            left: 22%;
+            transform: translateY(-50%);
+            color: #777;
+            font-size: 20px;
+        }
+
+        .mic-icon {
+            position: absolute;
+            top: 22%;
+            transform: translateY(-50%);
+            right: 22%;
+            color: #777;
+            font-size: 20px;
+        }
+
+        .button {
+            margin-top: 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 12px;
+            margin-right: 5px;
+            background-color: #424242;
+            color: white;
+        }
+
+        .button:hover {
+            background-color: #616161;
+        }
+
+        footer {
+            padding: 10px;
+            text-align: center;
+            background-color: rgb(78, 78, 78);
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .nav3 li a,
+        .nav4 li a {
+            text-decoration: none;
+            color: black;
+            font-size: 14px;
+            transition: color 0.3s;
+        }
+
+        .nav3 li {
+            float: left;
+            margin-right: 20px;
+            list-style-type: none;
+            padding: 10px 0;
+            position: relative;
+        }
+
+        .nav4 li {
+            float: right;
+            margin-right: 20px;
+            list-style-type: none;
+            padding: 10px 0;
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="nav1">
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Store</a></li>
+            </ul>
+        </nav>
+        <nav class="nav2">
+            <ul>
+                <li><a href="#">Gmail</a></li>
+                <li><a href="#">Images</a></li>
+                <li><a href="#"><img src="al-icon.png" alt=""></a></li>
+                <button type="submit" class="nav2-button">Sign in</button>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <div class="logo">
+                <img src="logo.png" alt="Google">
+            </div>
+        </article>
+
+        <article class="box-1">
+            <form action="https://google.com/search">
+                <i class="fas fa-search icon"></i>
+                <input type="text" name="q" class="box">
+                <i class="fas fa-microphone mic-icon"></i>
+                <div class="buttons">
+                    <input type="submit" value="Google Search" class="button">
+                    <input type="submit" value="I'm Feeling Lucky" class="button"
+                        formaction="https://google.com/search?&btnI=1">
+                </div>
+            </form>
+        </article>
+    </main>
+
+    <footer>
+        <nav class="nav3">
+            <ul>
+                <li><a href="#">Advertising</a></li>
+                <li><a href="#">Business</a></li>
+                <li><a href="#">How Search Works</a></li>
+            </ul>
+        </nav>
+        <nav class="nav4">
+            <ul>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+
+</html>
